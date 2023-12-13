@@ -1,4 +1,8 @@
 package HW_63;
+/*
+ * @date 12.12.2023
+ * @author Mihail Nedioglo
+ */
 
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
@@ -57,7 +61,7 @@ public class Task1_2_3_4 {
 
         // 5 Variant
         Matcher matcher = Pattern.compile("\\b\\d{5}\\b").matcher("Мой индекс 12345, а его индекс 67890. А число 456789 не подходит");
-        while (matcher.find()) System.out.println("task_1: " + matcher.group());
+        while (matcher.find()) System.out.println("task_1: " + "start-" + matcher.start() + " : " + matcher.group());
 /*
 Task 2:
 Найти все слова, начинающиеся с "re".
@@ -66,10 +70,11 @@ Task 2:
 Ожидаемый результат: "rewrite", "reread", "reports"
 */
 
-        Pattern pattern2 = Pattern.compile("\\bre\\w*\\b");
-        Matcher matcher2 = pattern2.matcher("I need to rewrite and reread these reports.");
+        Pattern pattern2 = Pattern.compile("\\bre\\w+\\b");
+       // Pattern pattern2 = Pattern.compile("\\bre\\w*\\b");
+        Matcher matcher2 = pattern2.matcher("I need to rewrite and reread these re reports.");
 
-        while (matcher2.find()) System.out.println("Task_2: " + matcher2.group());
+        while (matcher2.find()) System.out.println("Task_2: " + "start-" + matcher2.start() + " : " +  matcher2.group());
 
 /*
 Task 3:
@@ -81,10 +86,10 @@ Task 3:
       "+123-456-7890", "+987-654-3210"
 */
 
-        Pattern pattern3 = Pattern.compile("\\+\\d{3}-\\d{3}-\\d{4}");
+        Pattern pattern3 = Pattern.compile("\\+\\b\\d{3}-\\d{3}-\\d{4}\\b");
         Matcher matcher3 = pattern3.matcher("Мои номера: +123-456-7890, +987-654-3210.");
 
-        while (matcher3.find()) System.out.println("Task_3: " + matcher3.group());
+        while (matcher3.find()) System.out.println("Task_3: " + "start-" + matcher3.start() + " : " + matcher3.group());
 
 /*
 Task 4:
@@ -97,16 +102,19 @@ Task 4:
       "email@example.com", "test.email@domain.ru"
  */
 
-        Pattern pattern4 = Pattern.compile("\\b[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\\.[A-Z|a-z]{2,}\\b");
+        Pattern pattern4 = Pattern.compile("\\b([a-zA-Z]\\w{1,2}[\\w%#!&*]?\\.?[\\w%#!&*]+)@[a-zA-Z]{3,}\\.?[a-zA-Z]{3,}\\.[a-zA-Z]{2,3}\\b");
         Matcher matcher4 = pattern4.matcher("Мои контакты: email@example.com, test.email@domain.ru.");
 
-        while (matcher4.find()) System.out.println("Task_4: " + matcher4.group());
+        while (matcher4.find()) {
+            System.out.println("Task_4: " + "start-" + matcher4.start() + " : " + matcher4.group());
+            System.out.println("userName: " + matcher4.group(1));
+        }
 
 
 
 
 
-    }//Main
+    }//main
 
 
 }
