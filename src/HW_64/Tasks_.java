@@ -6,6 +6,7 @@ package HW_64;
 
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
+
 /*
 Task 1:
 Напишите регулярное выражение для извлечения имени пользователя и домена из email-адресов.
@@ -13,7 +14,7 @@ Task 1:
 Пример строки: "Контакт: email@example.com"
 Ожидаемый результат: "Имя пользователя: email, Домен: example.com"
 */
-public class Task1 {
+public class Tasks_ {
     public static void main(String[] args) {
         String input = "Контакт: email@example.com";
 
@@ -22,7 +23,7 @@ public class Task1 {
 
         while (matcher.find()) {
             System.out.println("Имя пользователя: " + matcher.group(1) + ", Домен: " + matcher.group(2));
-            System.out.println( "Task1: " + matcher.group());
+            System.out.println("Task1: " + matcher.group());
         }
 /*
 Task 2:
@@ -36,8 +37,12 @@ Task 2:
         //Task2
         Pattern pattern2 = Pattern.compile("('(.*?)')");
         Matcher matcher2 = pattern2.matcher("Она сказала: 'быстро', а потом добавила: 'осторожно'.");
+        int counter = 0;
         while (matcher2.find()) {
-            System.out.println("Task2: " + matcher2.group(1));
+            if (counter < 1) {
+                System.out.println("Task2: " + matcher2.group(1));
+                counter++;
+            }
         }
 
 /*
@@ -72,17 +77,15 @@ Task 4:
         String text = "Дата: 15-03-2023";
         System.out.println(text);
         Pattern pattern4 = Pattern.compile("(\\d{2})[-/](\\d{2})[-/](\\d{4})");
-        Matcher matcher4 =  pattern4.matcher(text);
-        while (matcher4.find()) {
-//            System.out.println(matcher4.group(1));
-//            System.out.println(matcher4.group(2));
-//            System.out.println(matcher4.group(3));
-//            System.out.println(matcher4.group());
-        }
+        Matcher matcher4 = pattern4.matcher(text);
+//        while (matcher4.find()) {
+////            System.out.println(matcher4.group(1));
+////            System.out.println(matcher4.group(2));
+////            System.out.println(matcher4.group(3));
+////            System.out.println(matcher4.group());
+//        }
         String newText = matcher4.replaceAll("$2-$1-$3"); // 03/15/2023
         System.out.println(newText);
-
-
 
 
     }

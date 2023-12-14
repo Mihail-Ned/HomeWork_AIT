@@ -5,8 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b13bfe74-5f75-4d5d-b4a2-4681e0984380" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/HW_63/Task1_2_3_4.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/HW_63/Task1_2_3_4.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/HW_64/Tasks_.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/HW_64/Tasks_.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,20 +48,7 @@
       <recent name="C:\Users\nmg84\IdeaProjects\HomeWork_AIT\src" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Task1">
-    <configuration name="Task1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="HW_64.Task1" />
-      <module name="HomeWork_AIT" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="HW_64.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Application.Tasks_65_">
     <configuration name="Task1_2_3_4" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="HW_63.Task1_2_3_4" />
       <module name="HomeWork_AIT" />
@@ -74,9 +62,36 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Tasks_" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="HW_64.Tasks_" />
+      <module name="HomeWork_AIT" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="HW_64.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Tasks_65_" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="HW_65.Tasks_65_" />
+      <module name="HomeWork_AIT" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="HW_65.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Task1" />
+        <item itemvalue="Application.Tasks_65_" />
+        <item itemvalue="Application.Tasks_" />
         <item itemvalue="Application.Task1_2_3_4" />
       </list>
     </recent_temporary>
