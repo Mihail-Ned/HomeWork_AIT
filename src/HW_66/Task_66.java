@@ -1,3 +1,5 @@
+package HW_66;
+
 /*
 @date 14.12.2023
 @author Mihail Nedioglo
