@@ -8,6 +8,7 @@ public class Task_66a {
     private static int counter;
 
 
+
     public static void main(String[] args) throws InterruptedException {
         Thread thread1 = new Thread(() -> {
             for (int i = 0; i < 1000; i++) {
