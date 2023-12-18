@@ -18,8 +18,8 @@ Task 1:
 Ожидаемый результат: "apple", "apple"
 */
 
-//        Pattern pattern4 = Pattern.compile("(?<!\\bgreen\\s)apple\\b");
-//        Pattern pattern4 = Pattern.compile("(?<!green\\s)apple");
+//        Pattern pattern1 = Pattern.compile("(?<!\\bgreen\\s)apple\\b");
+//        Pattern pattern1 = Pattern.compile("(?<!green\\s)apple");
         Pattern pattern1 = Pattern.compile("(?<!green )apple");
         Matcher matcher1 = pattern1.matcher("red apple, green apple, just an apple");
 
@@ -33,7 +33,7 @@ Task 2:
 Пример строки: "3a, 4b, 5cat, d6, e7, f8"
 Ожидаемый результат: "a", "b", "cat"
 */
-       // Pattern pattern4 = Pattern.compile("(?<=\\d)\\w+");
+       // Pattern pattern2 = Pattern.compile("(?<=\\d)\\w+");
         Pattern pattern2 = Pattern.compile("(?<=\\d)[a-zA-Z]+");
         Matcher matcher2 = pattern2.matcher("3a, 4b, 5cat, d6, e7, f8");
 
@@ -65,13 +65,12 @@ Task 4:
 */
 
         // *? -> обозначает "ленивый" квантификатор, который сопоставляет как можно меньше символов, чтобы закончить захват на первом вхождении следующей части паттерна.
-        Pattern pattern4 = Pattern.compile("\\bstart\\s([a-zA-Z]*?)\\send\\b");
-//        Pattern pattern4 = Pattern.compile("\\bstart\\s(\\w*?)\\send\\b"); //[a-zA-Z0-9_]
-//        Pattern pattern4 = Pattern.compile("\\bstart\\s(.*?)\\send\\b"); // Любой символ
-        Matcher matcher4 = pattern4.matcher("start middle end, beginning center finish");
+        Pattern pattern4 = Pattern.compile("(?<=start\\s)(\\w+\\s?)+(?=\\send)");
+//        Pattern pattern4 = Pattern.compile("(?<=start\\s)(.+)(?=\\send)");
+        Matcher matcher4 = pattern4.matcher("start middle end, beginning start middle word end center finish");
 
         while (matcher4.find()) {
-            System.out.println("Task4 : start-" + matcher4.start() + " " + matcher4.group(1));
+            System.out.println("Task4 : start-" + matcher4.start() + " " + matcher4.group());
         }
 
 
