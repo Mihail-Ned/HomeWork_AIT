@@ -6,7 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="b13bfe74-5f75-4d5d-b4a2-4681e0984380" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/HW_66/Task_66.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/HW_66/Task_66.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,7 +22,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="main2" />
+        <entry key="$PROJECT_DIR$" value="main" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -37,28 +36,28 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/nmg84/IdeaProjects/HomeWork_AIT/src&quot;,
-    &quot;onboarding.tips.debug.path&quot;: &quot;C:/Users/nmg84/IdeaProjects/HomeWork_AIT/src/Main.java&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "hw__66a",
+    "last_opened_file_path": "C:/Users/nmg84/IdeaProjects/HomeWork_AIT/src",
+    "onboarding.tips.debug.path": "C:/Users/nmg84/IdeaProjects/HomeWork_AIT/src/Main.java",
+    "settings.editor.selected.configurable": "preferences.lookFeel"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\nmg84\IdeaProjects\HomeWork_AIT\src" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Task_66a">
-    <configuration name="Task1_2_3_4" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="HW_63.Task1_2_3_4" />
+  <component name="RunManager" selected="Application.Task1_">
+    <configuration name="Task1_" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="HW_67.Task1_" />
       <module name="HomeWork_AIT" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="HW_63.*" />
+          <option name="PATTERN" value="HW_67.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -114,11 +113,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Task1_" />
         <item itemvalue="Application.Task_66a" />
         <item itemvalue="Application.Task_66" />
         <item itemvalue="Application.Tasks_65_" />
         <item itemvalue="Application.Tasks_" />
-        <item itemvalue="Application.Task1_2_3_4" />
       </list>
     </recent_temporary>
   </component>
