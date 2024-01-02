@@ -1,4 +1,4 @@
-package HW_65;
+package HW_65_;
 /*
 @date 14.12.2023
 @author Mihail Nedioglo
@@ -7,7 +7,7 @@ package HW_65;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-public class Tasks_65_ {
+public class Tasks_ {
     public static void main(String[] args) {
 
 /*
@@ -18,6 +18,7 @@ Task 1:
 Ожидаемый результат: "apple", "apple"
 */
 
+        System.out.println("==================");
 //        Pattern pattern1 = Pattern.compile("(?<!\\bgreen\\s)apple\\b");
 //        Pattern pattern1 = Pattern.compile("(?<!green\\s)apple");
         Pattern pattern1 = Pattern.compile("(?<!green )apple");
@@ -33,6 +34,7 @@ Task 2:
 Пример строки: "3a, 4b, 5cat, d6, e7, f8"
 Ожидаемый результат: "a", "b", "cat"
 */
+        System.out.println("==================");
        // Pattern pattern2 = Pattern.compile("(?<=\\d)\\w+");
         Pattern pattern2 = Pattern.compile("(?<=\\d)[a-zA-Z]+");
         Matcher matcher2 = pattern2.matcher("3a, 4b, 5cat, d6, e7, f8");
@@ -48,7 +50,7 @@ Task 3:
 Пример строки: "contact@example.com, user@test.com, admin@example.com"
 Ожидаемый результат: "contact", "admin"
 */
-
+        System.out.println("==================");
         Pattern pattern3 = Pattern.compile("\\b(\\w+)(?=(@example.com))\\b");
         Matcher matcher3 = pattern3.matcher("contact@example.com, user@test.com, admin@example.com");
 
@@ -63,7 +65,7 @@ Task 4:
 Пример строки: "start middle end, beginning center finish"
 Ожидаемый результат: "middle"
 */
-
+        System.out.println("==================");
         // *? -> обозначает "ленивый" квантификатор, который сопоставляет как можно меньше символов, чтобы закончить захват на первом вхождении следующей части паттерна.
         Pattern pattern4 = Pattern.compile("(?<=start\\s)(\\w+\\s?)+(?=\\send)");
 //        Pattern pattern4 = Pattern.compile("(?<=start\\s)(.+)(?=\\send)");
